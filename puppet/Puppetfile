@@ -1,0 +1,5 @@
+forge 'http://forge.puppetlabs.com'
+
+mod 'dc_depman',
+	:git => 'git://github.com/eduardodicarte/dc_depman.git'
+
