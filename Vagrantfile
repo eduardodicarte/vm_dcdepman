@@ -12,7 +12,10 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
   config.librarian_puppet.resolve_options      = { :force => true }
   config.librarian_puppet.destructive          = false
 
-  
+  config.ssh.username = "root"
+  config.ssh.password = "puppet"
+  config.ssh.insert_key = false
+
   config.vm.define :dcdepman do |dcdepman|
   	dcdepman.vm.hostname = "dcdepman.dicarte.com.br"	
 	dcdepman.vm.network "private_network", ip: "192.168.210.208"
