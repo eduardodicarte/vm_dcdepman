@@ -12,8 +12,6 @@ node default{
     ip => $ipaddress,
   }
   
-  notice($::dep_man_name)
-  
   class {"dc_depman":
     depManName => $::dep_man_name
   }
