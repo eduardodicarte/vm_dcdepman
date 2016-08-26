@@ -5,4 +5,5 @@
 !.gitignore
 puppet/modules/*
 !puppet/modules/.gitkeep
-
+maven/*
+!maven/.gitkeep
